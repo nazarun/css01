@@ -7,20 +7,22 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="index.css" >
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header id="home">
             <div class="slider">
-                <nav>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#blog">Blog</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
-                    </ul>
-                </nav>
+                <div class="nav-container">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="clear"></div>
                 <h1>Welcome to code cafe</h1>
             </div>
@@ -37,22 +39,22 @@
             We use modern content managing systems that provide full control of your website. </p>
             <div class="flex-container">
                 <div class="images-container">
-                    <img src="web.png" alt="globe of web">
+                    <img src="img/web.png" alt="globe of web">
                     <h4>Web maintenance</h4>
                     <p>Full tech support & maintenance of your website.</p>
                 </div>
                 <div class="images-container">
-                    <img src="dev-icon.png" alt="web design">
+                    <img src="img/dev-icon.png" alt="web design">
                     <h4>Web design</h4>
                     <p>Successful and eye-catching corporate design for your bussiness</p>
                 </div>
                 <div class="images-container">
-                    <img src="devices-icon.png" alt="different devices">
+                    <img src="img/devices-icon.png" alt="different devices">
                     <h4>Web development</h4>
                     <p>Development of corporate web-sites, blogs and online-stores.</p>
                 </div>
                 <div class="images-container">
-                    <img src="flow-icon.png" alt="website layout">
+                    <img src="img/flow-icon.png" alt="website layout">
                     <h4>User experience</h4>
                     <p>Premium quality user experience</p>
                 </div>
@@ -65,17 +67,17 @@
             <div class="flex-container">
                 <div class="images-container">
                     <a href="#" rel="nofollow">
-                        <img src="portfolio-img-1.jpg" alt="first portfolio example">
+                        <img src="img/portfolio-img-1.jpg" alt="first portfolio example">
                     </a>
                 </div>
                 <div class="images-container">
                     <a href="#" rel="nofollow">
-                        <img src="portfolio-img-2.jpg" alt="second portfolio example">
+                        <img src="img/portfolio-img-2.jpg" alt="second portfolio example">
                     </a>
                 </div>
                 <div class="images-container">
                     <a href="#" rel="nofollow">
-                        <img src="portfolio-img-3.jpg" alt="third portfolio example">
+                        <img src="img/portfolio-img-3.jpg" alt="third portfolio example">
                     </a>
                 </div>
             </div>
@@ -88,22 +90,33 @@
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
-            <form action="action.php" name="contacts">
-                <label>Your name
-                    <input type="text" name="name">
-                </label><br>
-                <label>Your email
-                    <input type="email" name="email">
-                </label><br>
-                <label>Message
-                    <textarea name="message"></textarea>
-                </label><br>
-                    <button type="submit">Send</button>
-            </form>
+            <div class="contact-form">
+                <form action="action.php" name="contact-form" >
+            		<input type="text" name="full-name" placeholder="Full Name" size=27 required>
+            		<input type="email select" name="email" placeholder="E-mail Address" size=27 required>
+            		<textarea name="message" placeholder="Message" cols=85 rows=5 required></textarea>
+            		<label>
+            		    <input type="checkbox">I like your company
+            		</label>
+            		<button type="submit">Send</button>
+    			</form>
+    		    <div class="contacts">
+                    <p>69/A, Some Street Name<br>Your City, code 01234<br>Country Name<br><br>
+                    +880 123 456 78 98<br>+860 987 648 74 95<br><br>
+                    company@mail.com<br>sales@mail.com<br>
+                    </p>
+    			</div>
+			</div>
         </section>
     </main>
     <footer>
         <p>© 2017</p>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    
 </body>
 </html>
