@@ -31,7 +31,7 @@
     <main>
         <section id="services">
             <h2>Services</h2>
-            <p>We offer web-development services, design and branding for your
+            <p class="section-story">We offer web-development services, design and branding for your
             business, search engine optimization and social media marketing
             strategy to ensure rich user experience and high convercy for your business. 
             Come on and impress your clients with modern solutions and unforgettable user experience. 
@@ -63,19 +63,19 @@
         
         <section id="portfolio">
             <h2>Portfolio</h2>
-            <p>Check our latest projects that we have created</p>
-            <div class="flex-container">
-                <div class="images-container">
+            <p class="section-story">Check our latest projects that we have created</p>
+            <div class="flex-container portfolio-flex-container">
+                <div class="images-container ">
                     <a href="#" rel="nofollow">
                         <img src="img/portfolio-img-1.jpg" alt="first portfolio example">
                     </a>
                 </div>
-                <div class="images-container">
+                <div class="images-container ">
                     <a href="#" rel="nofollow">
                         <img src="img/portfolio-img-2.jpg" alt="second portfolio example">
                     </a>
                 </div>
-                <div class="images-container">
+                <div class="images-container ">
                     <a href="#" rel="nofollow">
                         <img src="img/portfolio-img-3.jpg" alt="third portfolio example">
                     </a>
@@ -84,24 +84,26 @@
         </section>
         <section id="blog">
             <h2>Blog</h2>
-            <p>Welcome to our blog section. Here you can always find interesting information about web development technologies and new
+            <p class="section-story">Welcome to our blog section. Here you can always find interesting information about web development technologies and new
             trends. Check out the latest web-development tools and snippets.
             </p>
         </section>
         <section id="contacts">
             <h2>Contacts</h2>
             <div class="contact-form">
-                <form action="action.php" name="contact-form" >
-            		<input type="text" name="full-name" placeholder="Full Name" size=27 required>
-            		<input type="email select" name="email" placeholder="E-mail Address" size=27 required>
-            		<textarea name="message" placeholder="Message" cols=85 rows=5 required></textarea>
-            		<label>
-            		    <input type="checkbox">I like your company
-            		</label>
-            		<button type="submit">Send</button>
-    			</form>
+                <div id="form-messages"></div>
+                    <form  id="contact-form" name="contact-form" >
+                		<input type="text" id="full-name" name="full-name" placeholder="Full Name" size=27 required>
+                		<input type="email select" id="email" name="email" placeholder="E-mail Address" size=27 required>
+                		<textarea name="message" id="message" placeholder="Message" cols=85 rows=5 required></textarea>
+                		<label>
+                		    <input type="checkbox">I like your company
+                		</label>
+                		<button type="submit" id="btn-send">Send</button>
+        			</form>
+    			
     		    <div class="contacts">
-                    <p>69/A, Some Street Name<br>Your City, code 01234<br>Country Name<br><br>
+                    <p>Your City, code 01234<br>Country Name<br><br>
                     +880 123 456 78 98<br>+860 987 648 74 95<br><br>
                     company@mail.com<br>sales@mail.com<br>
                     </p>
@@ -117,6 +119,7 @@
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
+    <script src="js/form.js"></script>
     
 </body>
 </html>

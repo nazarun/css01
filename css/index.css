@@ -9,7 +9,7 @@ body {
     text-align:center;
 }
 .nav-container {
-    max-width:1200px;
+    max-width:1000px;
     margin:0 auto;
 }
 nav {
@@ -43,11 +43,12 @@ h1 {
     color:#fff;
 }
 main {
-    max-width:1200px;
+    max-width:1000px;
     margin:auto;
 }
 .images-container {
-    flex:1;  
+    flex:1;
+    padding:5px;
 }
 .images-container img {
     display:block;
@@ -63,14 +64,18 @@ main {
     margin:auto;
     display:flex;
     justify-content:space-between;
+    flex-wrap:wrap;
     padding-top:30px;
 }
 #portfolio img {
-    height:250px;
-    width:350px;
+    width:100%;
+    padding:10px;
 }
 section h2 {
     margin:30px auto;
+}
+.section-story {
+    padding:0 15px;
 }
 
 /*Footer css*/
@@ -80,10 +85,11 @@ section h2 {
 	background-size:cover;
 }
 .contact-form {
-	padding:80px 116px 74px 66px;
+	padding:80px 10px 104px 66px;
 	background: rgba(52, 51, 50, 0.82);
 	margin:100px auto;
-	max-width:945px;
+	max-width:900px;
+	
 }
 .black-footer {
 background-color:black;
@@ -119,7 +125,6 @@ label {
 }
 
 .contacts {
-	padding-left:50px;
 	color:#fff;
 	text-align:left;
 }
@@ -128,16 +133,28 @@ label {
 
 
 
-@media screen and (max-width:900px){
-    .slider {
-        height:400px;
-    }
+@media screen and (max-width:700px){
     
-    .flex-container {
-        flex-wrap:wrap;
-        justify-content:space-around;
-        flex-basis:50%;
-    }
+.portfolio-flex-container {
+     flex-direction:column;
+ }
     
+    
+    
+.contact-form {
+    padding:15px;
+}
+.contacts {
+    clear:both;
+    padding:0;
+  }  
+form {
+    width:70%;
+}    
+textarea, button {
+    min-width:180px;
+}    
     
 }
+
+@media screen and (min-width:320px) and (max-width:)
