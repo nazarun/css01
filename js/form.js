@@ -1,5 +1,5 @@
 
-(function (){
+$(function (){
     $('#btn-send').click(sendForm);
 });
 
@@ -11,12 +11,12 @@ function sendForm(e){
     data: {
         name : $('#full-name').val(),
         email : $('#email').val(),
-        message :$('#message').val()
+        message : $('#message').val()
     },
     dataType: "json"
   })
     .done(function(){
-         $('.contact-form').html('<h2>Thank you</h2>');
+         $('#form-messages').html('<h2>Thank you</h2>');
      });
 }
 
