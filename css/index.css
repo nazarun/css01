@@ -53,6 +53,7 @@ nav ul li :hover {
     background-size:cover;
     background-position: center center;
 }
+
 h1 {
     position:absolute;
     font-size:3rem;
@@ -109,7 +110,6 @@ section h2 {
 	background: rgba(52, 51, 50, 0.82);
 	margin:100px auto;
 	max-width:900px;
-	
 }
 .black-footer {
 background-color:black;
@@ -128,6 +128,12 @@ input, textarea, button {
 	background-color:rgba(224, 220, 220, 0);
 	color:rgb(222, 219, 219);
 	border-width:1px;
+}
+#full-name, #email {
+    width:45%;
+}
+#message {
+    width:100%;
 }
 
 button {
@@ -158,23 +164,17 @@ label {
 .portfolio-flex-container {
      flex-direction:column;
  }
-    
-    
-    
 .contact-form {
     padding:15px;
 }
 .contacts {
     clear:both;
     padding:0;
-  }  
+}  
 form {
-    width:70%;
+    width:100%;
 }    
-textarea, button {
-    min-width:180px;
-}    
+ 
     
 }
 
-@media screen and (min-width:320px) and (max-width:)

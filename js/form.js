@@ -17,6 +17,7 @@ function sendForm(e){
   })
     .done(function(){
          $('#form-messages').html('<h2>Thank you</h2>');
+         $('#contact-form').trigger('reset');
      });
 }
 

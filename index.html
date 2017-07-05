@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
@@ -44,22 +45,22 @@
             We make it a pleasure for your customers to visit your website. 
             We use modern content managing systems that provide full control of your website. </p>
             <div class="flex-container">
-                <div class="images-container">
+                <div class="images-container wow slideInLeft">
                     <img src="img/web.png" alt="globe of web">
                     <h4>Web maintenance</h4>
                     <p>Full tech support & maintenance of your website.</p>
                 </div>
-                <div class="images-container">
+                <div class="images-container wow slideInLeft">
                     <img src="img/dev-icon.png" alt="web design">
                     <h4>Web design</h4>
                     <p>Successful and eye-catching corporate design for your bussiness</p>
                 </div>
-                <div class="images-container">
+                <div class="images-container wow slideInRight">
                     <img src="img/devices-icon.png" alt="different devices">
                     <h4>Web development</h4>
                     <p>Development of corporate web-sites, blogs and online-stores.</p>
                 </div>
-                <div class="images-container">
+                <div class="images-container wow slideInRight">
                     <img src="img/flow-icon.png" alt="website layout">
                     <h4>User experience</h4>
                     <p>Premium quality user experience</p>
@@ -99,9 +100,9 @@
             <div class="contact-form">
                 <div id="form-messages"></div>
                     <form  id="contact-form" name="contact-form" >
-                		<input type="text" id="full-name" name="full-name" placeholder="Full Name" size=27 >
-                		<input type="email select" id="email" name="email" placeholder="E-mail Address" size=27 >
-                		<textarea name="message" id="message" placeholder="Message" cols=85 rows=5 ></textarea>
+                		<input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+                		<input type="email select" id="email" name="email" placeholder="E-mail Address" required>
+                		<textarea name="message" id="message" placeholder="Message"  rows=5 required></textarea>
                 		<label>
                 		    <input type="checkbox">I like your company
                 		</label>
@@ -125,8 +126,11 @@
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
   crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    
     <script src="js/form.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/index.js"></script>
+    
     
 </body>
 </html>
